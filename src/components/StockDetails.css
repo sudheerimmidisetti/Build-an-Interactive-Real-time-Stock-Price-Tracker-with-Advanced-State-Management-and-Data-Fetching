@@ -1,0 +1,157 @@
+.stock-details {
+  padding: 1.5rem 2rem;
+}
+
+.stock-details--empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--text-secondary);
+  min-height: 12rem;
+  text-align: center;
+}
+
+.stock-details-empty-text {
+  font-size: 0.9375rem;
+}
+
+.stock-details-header {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.stock-details-symbol {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.stock-details-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.25rem 0.625rem;
+  border-radius: 999px;
+}
+
+.badge-icon {
+  font-size: 0.625rem;
+}
+
+.stock-details-badge.positive {
+  background: var(--green-bg);
+  color: var(--green);
+}
+
+.stock-details-badge.negative {
+  background: var(--red-bg);
+  color: var(--red);
+}
+
+.stock-details-price {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.stock-details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.stock-details-item {
+  padding: 1rem 1.125rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.stock-details-item dt {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.stock-details-item dd {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.stock-details-item dd.positive {
+  color: var(--green);
+}
+
+.stock-details-item dd.negative {
+  color: var(--red);
+}
+
+.stock-details-item dd.neutral {
+  color: var(--text-primary);
+}
+
+/* Skeleton Loading Layout */
+.stock-details--skeleton .skeleton-title {
+  width: 100px;
+  height: 2.25rem;
+  border-radius: 6px;
+}
+
+.stock-details--skeleton .skeleton-badge {
+  width: 80px;
+  height: 1.625rem;
+  border-radius: 999px;
+}
+
+.stock-details--skeleton .skeleton-price {
+  width: 140px;
+  height: 2.75rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+}
+
+.stock-details--skeleton .skeleton-card {
+  height: 4.75rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .stock-details {
+    padding: 1.25rem;
+  }
+
+  .stock-details-price {
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .stock-details-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stock-details-grid {
+    grid-template-columns: 1fr;
+    gap: 0.625rem;
+  }
+}

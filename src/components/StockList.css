@@ -1,0 +1,59 @@
+/* Base .stock-list layout is defined in Dashboard.css */
+
+.stock-list-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin: 0;
+}
+
+.stock-list-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stock-list-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 2rem 1rem;
+  color: var(--text-secondary);
+}
+
+.stock-list-empty-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.stock-list-empty-desc {
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+.stock-list-clear-btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  background: var(--surface-hover);
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.stock-list-clear-btn:hover {
+  background: var(--border);
+}
+
+.stock-list-clear-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
